@@ -1,0 +1,69 @@
+@import './../Global.scss';
+.contact{
+   width: 100%;
+  min-height:600px;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  padding: 5%;
+  @include smallScreen{
+    flex-direction: column;
+    min-height: 1100px;
+ 
+  }
+  .contact-image{
+    flex: 50%;
+    height: 20%;
+    @include smallScreen{
+        flex: 100%;
+     
+      }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+  .contact-form{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    min-height: auto;
+    @include smallScreen{
+     width: 100%;
+     gap: 0px;
+      }
+    form{
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        gap: 20px;
+        width: 50%;
+        @include smallScreen{
+            width: 80%;
+            
+             }
+        input,textarea{
+            padding: 10px 10px;
+            border-radius: 5px;
+            border: 1px solid #9a9595;
+            width: 100%;
+        }
+        textarea{
+            resize: vertical;
+        }
+        button{
+          font-size: 17px;
+          color: #fff;
+          background-color: rgb(194, 61, 61);
+          border: none;
+          padding:10px 50px;
+          border-radius: 10px;
+
+        }
+    }
+  }
+}
