@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.scss';
+import Contact from './Contact/Contact';
+import Home from './Home/Home';
+import Portfolio from './Portfolio/Portfolio';
+import Sidebar from './Sidebar/Sidebar';
+import Skills from './Skills/Skills';
+import Topbar from './Topbar/Topbar';
+import { useState } from 'react';
 function App() {
+  const [sidebar,setSidebar]=useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Topbar sidebar={sidebar} setSidebar={setSidebar}/>
+    <Sidebar sidebar={sidebar} setSidebar={setSidebar}/>
+    <div className="section">
+    <Home/>
+    <Portfolio/>
+    <Skills/>
+    <Contact/>
     </div>
+   
+  </div>
   );
 }
 

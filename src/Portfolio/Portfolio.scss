@@ -1,0 +1,86 @@
+@import '.././Global.scss';
+.portfolio {
+    background-color: #fff;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-link {
+        margin: 20px 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size:18px;
+            &.active{
+                background-color: blueviolet;
+
+            }
+            a {
+                color: black;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .portfolio-item {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        	@include tablet{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        	@include smallScreen{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        	@include mobile{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        .item {
+            margin: 20px 20px;
+            position: relative;
+            
+            border-radius: 30px;
+            overflow: hidden;
+            &:hover .content{
+                visibility: visible;
+            }
+            .image {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                
+
+                }
+            }
+
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items:center ;
+                background-color: rgba(115, 118, 118,0.5);
+                visibility: hidden;
+                
+            transition: 1s ease-in-out all;
+            }
+        }
+    }
+}

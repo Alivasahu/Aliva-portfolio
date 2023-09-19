@@ -1,0 +1,95 @@
+@import  '../Global.scss';
+.skills {
+    background-color: rgb(60, 165, 99);
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include smallScreen{
+        min-height: 1400px;
+    }
+    .slider {
+        padding: 100px 0;
+        position: absolute;
+        left: 0;
+        display: flex; 
+        @include tablet{
+          
+        }
+        @include smallScreen{
+          flex-direction: column;
+       
+        }
+        @include mobile{
+           
+        }
+        .container {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            
+        margin: 20px 0;
+            .item {
+                width: 800px;
+                border: 1px solid #333;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 350px;
+                overflow: hidden;
+                @include tablet{
+                    width: 600px;
+                }
+                @include smallScreen{
+                    width:80%;
+                }
+                .left-side {
+                    flex: 40%;
+                    padding:0 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start ;
+                    flex-direction: column;
+                    gap: 15px;
+                    @include smallScreen{
+                        font-size: 15px;
+                    }
+                    @include mobile{
+                        font-size: 11px;
+                    }
+                }
+
+                .right-side {
+                    flex: 60%;
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .left-arrow {
+        position: absolute;
+        left: 10%;
+        font-size: 40px;
+        @include smallScreen{
+            display: none;
+        }
+    }
+
+    .right-arrow {
+        position: absolute;
+        right: 10%;
+        font-size: 40px;
+        @include smallScreen{
+            display: none;
+        }
+    }
+}
