@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Aliva-portfolio/static/css/main.5b673e4b.css",
+    "main.js": "/Aliva-portfolio/static/js/main.056ba66a.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Aliva-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/contact.png": "/Aliva-portfolio/static/media/contact.c3ec9f0cd3865ec0d98c.png",
+    "static/media/Home-image.jpg": "/Aliva-portfolio/static/media/Home-image.d8e2253c2da64f5c05f6.jpg",
+    "index.html": "/Aliva-portfolio/index.html",
+    "main.5b673e4b.css.map": "/Aliva-portfolio/static/css/main.5b673e4b.css.map",
+    "main.056ba66a.js.map": "/Aliva-portfolio/static/js/main.056ba66a.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Aliva-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b673e4b.css",
+    "static/js/main.056ba66a.js"
+  ]
+}
